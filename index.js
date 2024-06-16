@@ -15,10 +15,7 @@ function displayHeader() {
 
 const JWT_ACCOUNTS = JSON.parse(fs.readFileSync('accounts.json', 'utf-8'));
 
-const numClicks = parseInt(
-  readlineSync.question('Enter the number of clicks: '.cyan),
-  10
-);
+const numClicks = 10000;
 
 displayHeader();
 startClaiming(JWT_ACCOUNTS, numClicks);
